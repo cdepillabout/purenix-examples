@@ -1,6 +1,10 @@
 
 module Nix.Types where
 
+-- | A Nix attribute set that can have any types as values.  This is generally
+-- | used from unsafe functions like `getAttr`.
+foreign import data AttrSet :: Type
+
 -- | This datatype represents a Nix function that takes an attribute set.
 -- |
 -- | For instance, imagine the following Nix function:
