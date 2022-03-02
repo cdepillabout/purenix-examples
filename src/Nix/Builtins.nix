@@ -1,0 +1,4 @@
+
+{
+  getAttr = builtins.getAttr;
+}
